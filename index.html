@@ -9,22 +9,38 @@
 	height:  100%;
 	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ydq_g5gFsL7Ft9rZJwkXoiDe0Q0bF-mnd_YQQR6BJ5e-Dew8P-CWHGc9Yn0DnYoju0s&usqp=CAU);
 }
-	#menu{
+	/*#menu{
 		width: 100%;
 		height: 100px;
 		background-color: navyblue;
-	}
+	}*/
 	.button{
-		width: 33%;
-		height: 90px;
+		padding-top: 40px;
+		position: relative;
+		z-index: 1;
+		width: 200px;
+		height: 60px;
 		display: inline-block;
-		font-size: 50px ;
+		font-size: 20px ;
 		text-align:  center;
-		background-color:lightskyblue;
+		background-image:url(cloud.png);
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
 	.button:hover{
-		background-color:red;
+		background-color:deepskyblue;
+	}
+
+	#something {
+		z-index: 0;
+		top: 0px;
+		position: absolute;
+		width: 100%;
+		height: 800px;
+		background-image: url(https://i.insider.com/5bfec49248eb12058423acf7?width=700);
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 		
@@ -32,14 +48,15 @@
 
 </head>
 <body>
-	<div id="backg"></div>
- <div id='menu'>
+<center>
  <div class="button">projects</div>
  <a href="journal.html">
 	 <div class="button">journal</div>
 	</a>
  <div class="button">about me</div>
-</div>
+ </center>
+
+ <div id="something"></div>
 
 
 </body>
