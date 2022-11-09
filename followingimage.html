@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+
+	
+	<style type="text/css">
+		#pup{
+			width:200px;
+			height:200px;
+			background-image: url(puprun.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+
+
+		}
+
+	</style>
+		
+</head>
+<body>
+<div id="pup"></div>
+
+<script type="text/javascript">
+
+		document.addEventListener("mousemove",
+			function(event){
+				pup.style.left = event.clientX +"px"
+				pup.style.top = event.clientY + "px"
+			})
+	
+
+</script>
+
+</body>
+</html>
