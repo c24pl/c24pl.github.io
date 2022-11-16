@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center> <h1> You are the best!
+</h1> </center>
+
+<audio id="song" src="brunomarsa.m4a">
+	
+</audio>
+
+	<script type="text/javascript">
+		var clicks =0
+		document.addEventListener("click",
+			function(){
+				clicks = clicks + 1
+				console.log(clicks)
+
+		if (clicks%2 == 1) {document.body.style.
+			backgroundColor="blue";
+			song.play()
+		}
+			
+		if (clicks%2 == 0){document.body.style.
+			backgroundColor="pink";
+			song.pause()
+			box.innerText= i love you
+		}
+			})
+
+	</script>
+
+</body>
+</html>
