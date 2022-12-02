@@ -2,6 +2,20 @@
 <html>
 <head>
 	<title></title>
+
+	<style type="text/css">
+		
+		/*body{
+			background-image:url();
+		}*/
+
+		#picture{
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url(momandmedisney.png);
+
+		}
+	</style>
 </head>
 <body>
 <center> <h1> I love you so much mom and dad
@@ -11,6 +25,8 @@
 	
 </audio>
 
+<center><div id="picture"></div></center>
+
 	<script type="text/javascript">
 		var clicks =0
 		document.addEventListener("click",
@@ -18,14 +34,14 @@
 				clicks = clicks + 1
 				console.log(clicks)
 
-		if (clicks%2 == 1) {document.body.style.
-			backgroundColor="pink";
-			song.play()
-			box.innerText= "i love you"
-		}
+		if (clicks%2 == 1) 
+			{document.body.style.
+			picture.style.backgroundImage="url(momandmedisney.png)";
+			song.play();
+				}
 			
 		if (clicks%2 == 0){document.body.style.
-			backgroundColor="blue";
+			document.body.style.backgroundColor="blue";
 			song.pause()
 
 		}
