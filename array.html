@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#box{
+		width: 400px;
+		height: 400px;
+		border:1px solid black;
+	}
+
+		
+
+</style>
+</head>
+<body>
+
+	<center> 
+		<p> let's play </p>
+		<div id="box"></div>
+	</center>
+
+	<script type = "text/javascript">
+
+		var reasons = ["rock.png", "paper.jpg", "scissors.png"]
+
+
+box.addEventListener("click", function(){
+	
+var randomNumber = Math.round(Math.random()*3);
+
+	box.style.backgroundImage = "url("reasons[randomNumber]+")";
+	console.log(randomNumber)
+	})
+
+</script>
+
+</body>
+</html>

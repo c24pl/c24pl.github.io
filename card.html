@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -10,38 +10,42 @@
 		}*/
 
 		#picture{
+			width:800px;
+			height:800px;
+			background-image: url(sunsetparents.png);
 			background-size: contain;
 			background-repeat: no-repeat;
-			background-image: url(momandmedisney.png);
+			
 
 		}
 	</style>
 </head>
 <body>
 <center> <h1> I love you so much mom and dad
-</h1> </center>
+</h1> 
+<div id="picture"></div>
+</center>
 
 <audio id="song" src="brunomarsa.mp3">
 	
 </audio>
 
-<center><div id="picture"></div></center>
 
 	<script type="text/javascript">
 		var clicks =0
+
 		document.addEventListener("click",
 			function(){
 				clicks = clicks + 1
 				console.log(clicks)
 
 		if (clicks%2 == 1) 
-			{document.body.style.
-			picture.style.backgroundImage="url(momandmedisney.png)";
+			{document.body.style.backgroundColor="pink";
 			song.play();
 				}
 			
-		if (clicks%2 == 0){document.body.style.
-			document.body.style.backgroundColor="blue";
+		else if (clicks%2 == 0){
+			document.body.style.backgroundColor="white";
 			song.pause()
 
 		}
