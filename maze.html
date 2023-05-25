@@ -19,11 +19,24 @@
 			left:10px;
 			position:absolute;
 		}
+
+/*		#treat{
+			width:80px;
+			height:80px;
+			background-image: url(bone.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			top:0px;
+			left:1110px;
+			position:absolute;*/
+		}
 	</style>
 </head>
 <body>
 
 	<div id="buggy"></div>
+
+	<div id="treat"></div>
 
 	<script type="text/javascript">
 
@@ -38,7 +51,11 @@
 
 		document.addEventListener("keydown", function(event){
 			console.log(x)
+			console.log (y)
 
+			if (x>=1100 && y<50){
+				alert("u did it!")
+			}
 
 			if (event.keyCode == 39){
 				x= x+10;
@@ -66,6 +83,8 @@
 				buggy.style.top = y + "px";
 			
 			}
+
+			
 
 		})
 

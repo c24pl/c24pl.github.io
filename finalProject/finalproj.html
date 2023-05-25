@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style type="text/css">
+			
+			/*.slide{
+				background-color: pink;
+
+
+			}*/
+			
+			#eyes{
+				background-image:url(eye.png);
+				background-size: cover;
+				width: 100px;
+				height:100px;
+			}
+
+			#code{
+				background-image:url(colorcode.png);
+				background-size: cover;
+				width: 500px;
+				height:500px;
+			}
+
+			#elist{
+				background-image:url(eventlist.png);
+				background-size: cover;
+				width: 500px;
+				height:500px;
+			}
+
+			p{
+				font-size: 50px;
+				font-family: alfaslabone;
+				background-color:rgba(255,255,255,0.5);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="pink" class="slide"><h1><p>the story of my dog</p></h1>
+</section>
+				<section data-background-color="pink" class="slide" data-background-size="contain" data-background-image="firstdaypup.png"><p>once upon a time, on August 26th 2020, a new member of my family came home.</p>
+
+				</section>
+
+				<section data-background-color="pink" class="slide" data-background-size="contain" data-background-image="hamppup.png"><p>at first, i didn't care for a dog that much</p> </section>
+				<section data-background-color="pink" class="slide" data-background-size="contain" data-background-image="sophiarock.jpg"><p>all my friends LOVED him</p></section>
+				<section data-background-color="pink" class="slide" data-background-size="contain" data-background-image="boyspup.png"></section>
+				<section data-background-color="pink" class="slide" data-background-size="contain" data-background-image="meandrock.png"><p>soon i started to fall in love with him too</p></section>
+					<section data-background-color="pink" class="slide" data-background-size="contain" data-background-image="shoppup.jpg"><p>but, i've always wanted to know how he saw things</p></section>
+					<section data-background-color="pink" class="slide" data-background-size="contain" data-background-image="rbeach.png"><p>so i tried to make a code where i could simulate his eyesight</p></section>
+				<section data-background-color="pink" class="slide" ><a href="../colors.html"><center><div id=eyes></div></center></a></section>
+						<section data-background-color="pink"><center><div id=code></div></center></section>
+						<section data-background-color="pink"><center><div id=elist></div></center></section>
+						<section data-background-color="pink"><p>thank you!!!!</p></section>
+			</div>
+			</p>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
